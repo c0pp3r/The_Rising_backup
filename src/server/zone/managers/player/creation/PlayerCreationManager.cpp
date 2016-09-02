@@ -608,12 +608,12 @@ bool PlayerCreationManager::createCharacter(ClientCreateCharacterCallback* callb
 	ghost->addChatRoom(chatManager->getAuctionRoom()->getRoomID());
 
 	ManagedReference<SuiMessageBox*> box = new SuiMessageBox(playerCreature, SuiWindowType::NONE);
-	box->setPromptTitle("Welcome To Project Phoenix");
-	box->setPromptText("Welcome to SWG Project Phoenix, please read the forums for latest changes.");
+	box->setPromptTitle("Welcome To The Rising!");
+	box->setPromptText("Welcome to SWG The Rising, please read the forums for latest changes.");
 	//Broadcast to Server
 	String playerName = playerCreature->getFirstName();
 	StringBuffer zBroadcast;
-	zBroadcast << "\\#00ace6" << playerName << " \\#ffb90f Has Joined The Project Phoenix Server!";
+	zBroadcast << "\\#00ace6" << playerName << " \\#ffb90f Has Joined The Rising Server!";
 	playerCreature->getZoneServer()->getChatManager()->broadcastGalaxy(NULL, zBroadcast.toString());
 	ghost->addSuiBox(box);
 	playerCreature->sendMessage(box->generateMessage());

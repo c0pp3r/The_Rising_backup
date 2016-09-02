@@ -45,8 +45,8 @@
 -----------------------------------
 
 --Blue frog / GM buff values
-performanceBuff = 500
-medicalBuff = 500
+performanceBuff = 1500
+medicalBuff = 1500
 performanceDuration = 7200 -- in seconds
 medicalDuration = 7200 -- in seconds
 
