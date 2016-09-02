@@ -1365,8 +1365,8 @@ void PlayerObjectImplementation::notifyOnline() {
 	playerCreature->notifyObservers(ObserverEventType::LOGGEDIN);
 
 	if (getForcePowerMax() > 0 && getForcePower() < getForcePowerMax())
-		activateForcePowerRegen();/chatRoom join SWG.Core3.TheRising
-/chatRoom join SWG.Core3.TheRising
+		activateForcePowerRegen();
+
 	schedulePvpTefRemovalTask();
 
 	//Set PVP rating for existing players
@@ -1376,7 +1376,7 @@ void PlayerObjectImplementation::notifyOnline() {
 
 	SkillList* skillList = playerCreature->getSkillList();
 	ManagedReference<PlayerObject*> ghost = playerCreature->getPlayerObject();
-	playerCreature->sendExecuteConsoleCommand("/chatRoom join SWG.Core3.TheRising;");
+	//playerCreature->sendExecuteConsoleCommand("/chatRoom join SWG.Therising.Chat.Rising;");
 
 	// Check for Old Trainer Method
 	Vector3 coords = ghost->getTrainerCoordinates();
